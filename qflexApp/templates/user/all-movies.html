@@ -1,0 +1,61 @@
+{% extends '../base.html' %}
+
+{% block title %}All movies{% endblock %}
+{% load static %}
+{% block content %}
+    <main>
+        <div class="top-ten">
+        <div class="container">
+            <h2 class=" mb-5">All movies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Search</h3>
+                            <form class="mb-4" action="{% url 'allMovies' %}">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <input type="search" name="search" class="form-control" placeholder="Film name, description">
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="submit" class="svg-image-div"><i class="fa-solid fa-magnifying-glass">
+                                            <svg class="svg-image" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-image-color" d="M24.4766 24.4766L32 32" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="svg-image-color" d="M15.166 28.332C22.4374 28.332 28.332 22.4374 28.332 15.166C28.332 7.89461 22.4374 2 15.166 2C7.89461 2 2 7.89461 2 15.166C2 22.4374 7.89461 28.332 15.166 28.332Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <h3>Genres</h3>
+                            <ul>
+                                <li><a href="{% url 'allMovies' %}" class="text">All</a></li>
+                                {% for genre in genres %}
+                                <li><a href="{% url 'filterMovies' slug=genre.slug %}" class="text">{{ genre.genreName }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    {% for movie in movies %}
+                    <div class="card mb-4">
+                        <div class="card-body__all">
+
+                            <div class="card-body__item1">
+                                <h2>{{ movie.movieName }}</h2>
+                            <h6>Rating: {{ movie.rating }}</h6>
+                            <a href="{% url 'movieDetail' pk=movie.pk %}" class="btn btn-dark">Watch</a>
+                            </div>
+                            <div class="card-body__item2">
+                                <a href="{% url 'movieDetail' pk=movie.pk %}"><img class="movie__cover" src="{{ movie.cover }}" width="100%" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends '../base.html' %}
+
+{% block title %}Top movies{% endblock %}
+
+{% block content %}
+<main>
+    <div class="recommended mb-5">
+        <div class="container">
+            {% for m in movie %}
+            {% if m.isRecommended %}
+            <div class="card">
+                <div class="card-body__recommended">
+                    <div class="column1">
+                        <a href="{% url 'movieDetail' pk=m.pk %}"><img class="img-poster" src="{{ m.poster }}" width="100%" alt=""></a>
+
+                    </div>
+                    <div class="column2">
+                        <h2>{{ m.movieName }}</h2>
+                        <h4>Genre: {{ m.genre.genreName }}</h4>
+                        <p>Description: {{ m.description }}</p>
+                        <a href="{% url 'movieDetail' pk=m.pk %}" class="btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <h1>Nothing</h1>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="top-ten">
+        <div class="container">
+            <h2 class="container__h2">Top 10 movies</h2>
+            <div class="owl-carousel owl-theme">
+                {% for m in movies %}
+                {% if m.isTopTen %}
+                <div class="item">
+                    <div class="card">
+                        <div class="card-pobeda">
+                            <div class="column11">
+                                <h2>{{ m.movieName }}</h2>
+                                <h6>Rating: {{ m.rating }}</h6>
+                                <a href="{% url 'movieDetail' pk=m.pk %}" class="btn btn-dark">Watch</a>
+                            </div>
+                            <div class="column22">
+                                <div class="column22__container">
+                                    <a href="{% url 'movieDetail' pk=m.pk %}"><img class="img-cover__top" src="{{ m.cover }}" width="100%" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <h1>Nothing</h1>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="mt-5 text-center">
+                <a href="{% url 'allMovies' %}" class="btn btn-dark">See all</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

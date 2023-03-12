@@ -1,0 +1,77 @@
+* {
+    color: white;
+}
+
+input {
+    color: black;
+}
+
+.navbar-nav .nav-item a {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0);
+}
+
+.navbar-nav .nav-item a:hover {
+    border-bottom: 1.5px solid white;
+}
+
+.banner__body .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+main,
+.card-body__recommended,
+.card-body {
+    background-color: #1A1A1D;
+}
+
+.navbar {
+    background: #1A1A1D;
+    border-bottom: 1px solid #4E4E50;
+}
+
+.card-body__recommended {
+    border: 1.5px solid #4E4E50;
+}
+
+.card-pobeda {
+    border: 1.5px solid #4E4E50;
+}
+
+.card-body__all {
+    border: 1.5px solid #4E4E50;
+}
+
+.card .card-body {
+    border: 1.5px solid #4E4E50;
+}
+
+a.btn {
+    background: #C3083F;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid #C3083F;
+}
+
+a.btn:hover {
+    background: #1A1A1D;
+    border: 1px solid #C3083F;
+    color: white;
+}
+
+.container a.banner__button {
+    background: #C3083F;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid #C3083F;
+}
+
+.container a.banner__button:hover {
+    background: #950741;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid #950741;
+}
+
+.col-3 button {
+    background-color: black;
+}

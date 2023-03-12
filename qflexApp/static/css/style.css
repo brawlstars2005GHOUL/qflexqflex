@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.svg-image{
+    width: 20px;
+    height: 20px;
+}
+.svg-image-div i{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo__text{
+    font-family: 'Archivo Black';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.87);
+    margin: 0;
+    font-size: 1.5vw;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.logo-all {
+    width: 2.7vw;
+}
+li a {
+    text-decoration: none;
+}
+
+
+#banner a {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+#banner a:hover {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+
+.navbar-nav .nav-item {
+    margin: 0 30px;
+}
+
+.navbar-nav .nav-item a {
+    transition: 0s;
+}
+
+
+
+
+#banner {
+    color: #ffffff;
+    background: url('../img/main-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    padding-top: 13%;
+    text-align: center;
+}
+
+.banner__body .navbar {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.banner__body .navbar .container {
+    max-width: 65%;
+}
+
+#banner .container {
+    max-width: 45%;
+}
+
+#banner p {
+    margin: 40px 0 20px 0;
+}
+
+
+
+
+
+
+main {
+    padding-top: 50px;
+    padding-bottom: 15vh;
+    min-height: 100vh;
+}
+
+#banner h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.container__h2 {
+    margin-bottom: 2vw;
+}
+
+.card-body__recommended {
+    display: grid;
+    grid-template: auto / 1fr 2fr;
+    border-radius: 10px;
+}
+
+.recommended .container .card {
+    border: none;
+    --bs-card-bg: none;
+}
+
+.item .card {
+    border: none;
+    --bs-card-bg: none;
+
+}
+
+.card-pobeda {
+    --bs-card-bg: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 170px;
+    border-radius: 10px;
+}
+
+
+.col-md-8 .card {
+    --bs-card-bg: none;
+}
+
+.card-body__all {
+    --bs-card-bg: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    padding: 30px;
+
+}
+.card-body__item2 a{
+    width: 100%;
+    height: 100%;
+}
+.movie__cover {
+    width: 100%;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.movie-detail__img {
+    border-radius: 10px;
+}
+
+.card-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container .card,
+.card .card-body {
+    --bs-card-bg: none;
+}
+
+.card .card-body {
+    border-radius: 10px;
+}
+
+.col-md-4 .card {
+    --bs-card-bg: none;
+}
+
+.item {
+    height: 100%;
+}
+
+.owl-item {
+    height: 170px
+}
+
+.column22 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column22__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column22__container a img {
+    width: 10vw;
+    height: 6.5vw;
+    border-radius: 10px;
+}
+
+a.btn {
+    border-radius: 7px;
+}
+
+
+.container a.banner__button {
+    border-radius: 7px;
+}
+
+.container a.banner__button:hover {
+    border-radius: 7px;
+}
+
+.header__moon {
+    cursor: pointer;
+}
+
+.img-poster {
+    width: 70%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-poster:hover {
+    transform: scale(1.05);
+}
+
+.img-cover__top {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-cover__top:hover {
+    transform: scale(1.05);
+}
+.movie__cover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.movie__cover:hover {
+    transform: scale(1.05);
+}
+
+.column1 {
+    margin: 30px 0 30px 30px;
+}
+
+.column2 {
+    margin: 30px 30px 30px 0;
+}
+
+column #banner p {
+    width: 60%;
+    text-align: justify;
+}
+
+.col-3 button img {
+    width: 60%;
+    margin-bottom: 3px;
+}
+
+
+
+.card-movie {
+    margin-top: 2vw;
+}
+
+.col-3 button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.column1 img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.col-md-8 a.btn{
+    display: block;
+    margin: 1vw 0 3vw;
+    width: 100px;
+}
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    #banner {
+        padding-top: 15%;
+    }
+    .logo-all {
+    width: 3.5vw;
+    }
+    .logo__text{
+        font-size: 2vw
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #banner {
+        padding-top: 18%;
+    }
+    .logo-all {
+    width: 4vw;
+    }
+    .logo__text{
+        font-size: 2.5vw
+    }
+    #banner .container {
+        max-width: 55%;
+    }
+
+    .col-3 .btn {
+        width: 60px;
+        height: 35px;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .column1 img {
+        width: 100%;
+    }
+
+    .column1,
+    .column2 {
+        margin: 30px;
+    }
+
+    .card-body__recommended {
+        grid-template: auto / 1fr 1.5fr;
+
+    }
+
+    .column11 h2 {
+        font-size: 1rem;
+    }
+
+    .column22__container a img {
+        width: 13vw;
+        height: 8vw;
+    }
+
+    .column11 h6 {
+        font-size: 0.7rem;
+    }
+
+    .card-pobeda {
+        height: 150px;
+    }
+
+    .owl-item {
+        height: 150px;
+    }
+
+    .column22__container a img {
+        width: 17vw;
+        height: 11vw;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .mobile-dark {
+        background-color: #000;
+    }
+    .logo-all {
+    width: 5.5vw;
+    }
+    .logo__text{
+        font-size: 2.6vw
+    }
+    #banner,
+    #banner p {
+        text-align: center;
+    }
+
+    #banner p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #banner {
+        padding-top: 25%;
+    }
+
+    #banner h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .col-md-8 .card {
+        margin-top: 40px;
+    }
+    .logo-all {
+    width: 6.3vw;
+    }
+    .logo__text{
+        font-size: 2.9vw
+    }
+    .card-body__recommended {
+        display: block;
+    }
+
+    #banner {
+        padding-top: 30%;
+    }
+
+    .column1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 14vw;
+    }
+
+    .card-pobeda {
+        height: 135px;
+    }
+
+    .owl-item {
+        height: 135px;
+    }
+
+    .column22__container a img {
+        width: 17vw;
+        height: 11vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        width: 25vw;
+    }
+    .logo-all {
+    width: 10vw;
+    }
+    .logo__text{
+        font-size: 5vw
+    }
+    .card-pobeda {
+        height: 140px;
+    }
+
+    .owl-item {
+        height: 140px;
+    }
+
+    .column22__container a img {
+        width: 170px;
+        height: 100px;
+    }
+}
